@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+body {
+  background-color: #121214;
+}
+
+h1 {
+  color: #08c05e;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 15px;
+}
+
+h2,
+p {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+p {
+  line-height: 1.2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  max-width: 1440px;
+  padding: 50px 36px;
+  background-image: url("./img/bg-img.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.bg-fake::before {
+  content: '';
+  position: absolute;
+  background-color: #121214;
+  background-position: top left; 
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.logo {
+  margin-bottom: 92px;
+}
+
+.wrapper {
+  /* border: 1px solid blue; */
+  margin-bottom: 50px;
+}
+
+form {
+  /* border: 1px solid blue; */
+  margin-bottom: 50px;
+}
+
+.mail-label,
+.ler1o {
+  color: #a8a8a8;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 0, 875rem;
+  line-height: 1.2rem;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  box-shadow: 8px 8px 10px rgb(0, 0, 0, 0.4);
+}
+
+.ler1o {
+  color: #8257e5;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.inp-mail {
+  background-color: #04d361;
+  height: 53px;
+  min-width: 5px;
+}
+
+#e-mail {
+  height: 53px;
+  width: 800px;
+  border: 0px;
+}
+
+.seta-btn {
+  display: inline-block;
+  background-color: #8257e5;
+  padding: 14px;
+  border: 0px;
+}
+
+.mail-label {
+  display: block;
+  margin-bottom: 17px;
+}
+
+@media (max-width:930px) {
+
+  .logo img{
+    width: 300px;
+  }
+
+}
+
+@media (max-width:1100px) {
+  .logo {
+    margin-bottom: 45px;
+  }
+  .container {
+    background-image: none;
+  }
+
+}
